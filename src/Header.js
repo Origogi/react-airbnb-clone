@@ -1,6 +1,7 @@
-import { Search } from "@mui/icons-material";
+import { ExpandMore, Language, Search } from "@mui/icons-material";
 import React from "react";
 import "./Header.css";
+import { Avatar } from "@mui/material";
 
 function Header() {
   return (
@@ -12,6 +13,13 @@ function Header() {
       <div className="header__center">
         <input type="text" />
         <Search />
+      </div>
+
+      <div className="header__right">
+        <p>Become a host</p>
+        <Language />
+        <ExpandMore />
+        <Avatar />
       </div>
     </div>
   );

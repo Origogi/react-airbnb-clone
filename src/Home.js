@@ -28,16 +28,19 @@ function Home() {
         <Card
           src="https://www.traveldailymedia.com/assets/2021/11/airbnb-1-min.jpeg"
           title="Entire"
+          price="$29.99/night"
           description="Comfortable private places, with room for friends or family."
         />
         <Card
           src="https://www.traveldailymedia.com/assets/2021/11/airbnb-1-min.jpeg"
           title="Entire"
+          price="$29.99/night"
           description="Comfortable private places, with room for friends or family."
         />
         <Card
           src="https://www.traveldailymedia.com/assets/2021/11/airbnb-1-min.jpeg"
           title="Entire"
+          price="$29.99/night"
           description="Comfortable private places, with room for friends or family."
         />
       </div>

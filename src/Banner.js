@@ -1,6 +1,6 @@
-import { Search } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import React, { useState } from "react";
+import Search from "./Search";
 import "./Banner.css";
 
 function Banner() {

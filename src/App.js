@@ -2,16 +2,18 @@ import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
 import Footer from "./Footer";
-import { Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import SearchPage from "./SearchPage";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
-        <Home />
-
-        <SearchPage />
+        <Routes>
+          <Home />
+          <SearchPage />
+        </Routes>
         <Footer />
       </Router>
     </div>

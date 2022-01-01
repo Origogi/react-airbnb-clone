@@ -1,12 +1,22 @@
-import React from 'react'
-import './SearchResult.css'
+import React from "react";
+import "./SearchResult.css";
+import { FavoriteBorder } from "@mui/icons-material";
 
-function SearchResult() {
-    return (
-        <div>
-            
-        </div>
-    )
+function SearchResult({
+  img,
+  location,
+  title,
+  description,
+  star,
+  price,
+  total,
+}) {
+  return (
+    <div className="searchResult">
+      <img src={img} alt="" />
+      <FavoriteBorder className="searchResult__heart" />
+    </div>
+  );
 }
 
-export default SearchResult
+export default SearchResult;

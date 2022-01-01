@@ -5,9 +5,11 @@ import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
 import { People } from "@mui/icons-material";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 // DATE PICKER COMPONENT
 function Search() {
+  const navigate = useNavigate();
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
@@ -29,7 +31,9 @@ function Search() {
         Number of guests <People />
       </h2>
       <input min={0} defaultValue={2} type="number" />
-      <Button>Search Airbnb</Button>
+      <Button onClick={() => navigate("/search")} variant="outlined">
+        Search Airbnb
+      </Button>
     </div>
   );
 }
